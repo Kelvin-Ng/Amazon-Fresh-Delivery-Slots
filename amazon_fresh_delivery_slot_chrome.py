@@ -21,7 +21,7 @@ def getSlots(productUrl):
     time.sleep(60)
  
     while True:
-        driver.refresh()
+        driver.get(productUrl)
         time.sleep(sleep_for + random.randint(-sleep_for_rand_range, sleep_for_rand_range))
 
         msg = ''
